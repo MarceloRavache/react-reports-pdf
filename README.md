@@ -18,7 +18,7 @@ const App = () => {
   const columns:[string, string] =  ["ID","NOME"];
   const data:{}[] =  [{id:"1",name:"Teste"}];
 
-  const {exportPDF} = RelatorioPDF({
+  const {exportPDF} = ReportPDF({
     title:"Relatorio",
     columns: columns as any,
     data: data as any
