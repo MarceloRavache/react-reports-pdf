@@ -4,5 +4,6 @@
 ### pdfmake
 
 ## Install
-npm i pdkmake react-reports-pdf
+npm i pdfmake react-reports-pdf
+
 npm i @types/pdfmake -D

@@ -4,17 +4,17 @@ import { Content, PageOrientation, PageSize } from 'pdfmake/interfaces';
 
 pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
-interface IData {
+export interface IData {
 	title?: string;
 	data: [];
 	columns: [];
 }
 
-type plotTypes = {
+export type plotTypes = {
   [key: string]: string;
 }
 
-const formatData = (data:{}[]) => {
+export const formatData = (data:{}[]) => {
 	return data.map((item:plotTypes) => {
 		const refactorItems = []
 		for (var prop in item) {
@@ -24,7 +24,7 @@ const formatData = (data:{}[]) => {
 		return (refactorItems);
 	});
 }
-const formatColumns = (data:[]) => {
+export const formatColumns = (data:[]) => {
 	return data.map(item => {
 		
 		return ({text: item, style: 'tableHeader'});
