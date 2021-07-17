@@ -58,7 +58,7 @@ export const DocumentPDF = (data:IData) => {
 	pdfMake.createPdf(documentDefinition).open();
 }
 
-export const RelatorioPDF = (data:IData) => {
+export const ReportPDF = (data:IData) => {
 	const exportPDF = () => {
     	DocumentPDF(data);
   	}
